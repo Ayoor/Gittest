@@ -1,0 +1,180 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mainpage{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(109, 54, 54, 0.5),rgba(59, 64, 82, 0.5)), url("Images/home-cover.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.nav-item{
+    margin-left: 20px;
+   
+}
+
+.navbar{
+    padding-top: 30px;
+        
+}
+.navbar-light .navbar-nav .nav-link , .navbar .navbar-brand{
+    color: brown;
+}
+.navbar .navbar-brand{
+    font-size: 200%;
+    color: wheat;
+
+}
+.navbar-light .navbar-nav .nav-link:hover , .navbar .navbar-brand:hover{
+    color: rgb(218, 160, 160);
+}
+.navbar-light .navbar-nav .nav-link:active , .navbar .navbar-brand:active{
+    color: blue;
+}
+.jumbotron{
+    color: wheat;
+    background-color: transparent;
+    margin-top: 100px;
+}
+.downloadbutton{
+    border: 1px solid orange;
+    border-radius: 7px;
+    background-color: brown;
+    color: brown;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: white;
+}
+.signup{
+    border: 1px solid orange;
+    border-radius: 7px;
+    background-color: transparent;
+    color: brown;
+    text-decoration: none;
+    padding: 15px 30px;
+    color: white;
+    margin-left: 15px;
+}
+.buttondiv{
+    margin-top: 40px;
+   
+}
+.downloadbutton:hover{
+    text-decoration: none;
+    color: white;
+    background-color: rgb(143, 33, 33);
+    transition: 1s;
+    border-color: brown;
+}
+ .signup:hover{
+    border: 1px solid orange;
+    border-radius: 7px;
+    background-color: brown;
+    color: brown;
+    text-decoration: none;
+    color: white;
+transition: 1s;
+}
+/* about section */
+.aboutsection{
+    width: 100%;
+    min-height: 60vh;
+    background-color: white;
+}
+.contenttopic{
+    margin-top: 120px;
+}
+.abouttext{
+font-size: 110%;
+}
+.textsegment{
+    border-bottom: 1px solid brown;
+    padding-bottom: 30px;
+}
+.aboutbodytext{
+    margin-top: 90px;
+    border: none;
+}
+
+/* catalogue section */
+.no-gutters{
+    margin-top: 50px;
+}
+.card{
+    height: 230px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 0px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-images{
+    width: 100%;
+}
+
+.card1{
+    background-image: url("Images/light\ brown.jpg");
+}
+.card2{
+   background-image: url("Images/dark theme room.jpg"); 
+}
+.card3{
+   background-image: url("Images/TV.jpg "); 
+}
+.card4{
+    background-image: url("Images/white furniture.jpg ");
+}
+.card5{
+    background-image: url("Images/office.jpeg "); 
+}
+.card6{
+    background-image: url("Images/meeting.jpg "); 
+}
+.card7{
+    background-image: url("Images/Outdoor.jpg"); 
+}
+.card8{
+    background-image: url("Images/Grey Cushion.jpg "); 
+}
+
+
+
+
+@keyframes slide_up {
+    0%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+   
+}
+
+@keyframes fade-in{
+    0%{
+       opacity: 0;
+    }
+    100%{
+       opacity: 1;
+    }
+}
+
+.card:hover>h6{
+
+animation: slide_up 1s ease;
+}
+.card:hover{
+    background: linear-gradient(rgba(80, 68, 241, 0.4),rgba(80, 68, 241, 0.4));
+
+}
