@@ -81,7 +81,7 @@ body{
     color: brown;
     text-decoration: none;
     color: white;
-transition: 1s;
+    transition: 1s;
 }
 /* about section */
 .aboutsection{
@@ -95,14 +95,21 @@ transition: 1s;
 .abouttext{
 font-size: 110%;
 }
-.textsegment{
-    border-bottom: 1px solid brown;
+#textsegment{
+    border: 1px solid brown;
     padding-bottom: 30px;
 }
 .aboutbodytext{
     margin-top: 90px;
     border: none;
 }
+
+.headerunderline{
+    width: 80px;
+    border-bottom: 1px solid brown;
+    margin: 0 auto;
+}
+
 
 /* catalogue section */
 .no-gutters{
@@ -170,11 +177,83 @@ font-size: 110%;
     }
 }
 
-.card:hover>h6{
+.card:hover>h5{
 
 animation: slide_up 1s ease;
 }
-.card:hover{
-    background: linear-gradient(rgba(80, 68, 241, 0.4),rgba(80, 68, 241, 0.4));
+
+
+  .catlgdiv:before {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    bottom: 0;
+    transition: height 0.5s ease-out;
+    background: linear-gradient(rgba(88, 123, 236, 0.3),rgba(240, 126, 160, 0.3));
+  }
+  .catlgdiv:hover:before {
+    height: 100%;
+  }
+  .catlg-text{
+    color: red
+  }
+  .cataloguesection{
+    margin-bottom: 3rem;
+  }
+
+  .contactbtn{
+    border: 1px solid orange;
+    border-radius: 7px;
+    background-color: transparent;
+    color: brown;
+    text-decoration: none;
+    padding: 10px 40px;
+    color: black;
+    margin-left: 15px;
+    
+    
+  }
+
+.prompttext{
+
+    margin-bottom: 30px;
+}
+.contactbtn:hover{
+    border: 1px solid orange;
+    border-radius: 7px;
+    background-color: brown;
+    color: brown;
+    text-decoration: none;
+    color: white;
+    transition: .6s;
+}
+
+.promptdiv{
+    margin-bottom: 100px;
+}
+
+.jumbotron{
+    color: black;
+   
+    margin-top: 100px;
+}
+
+.jumbo2{
+    border: 1px solid black;
+    border-radius: 0;
+    background-image: linear-gradient(rgba(99, 77, 77, 0.5),rgba(133, 135, 139, 0.5)), url("Images/TV.jpg");
+    background-size: length;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 18.75rem;
+    color: white;
+}
+
+.underline2{
+    width: 80px;
+    border-bottom: 1px solid white;
+    margin: 0 auto;
 
 }
