@@ -190,7 +190,7 @@ animation: slide_up 1s ease;
     height: 0%;
     width: 100%;
     bottom: 0;
-    transition: height 0.5s ease-out;
+    transition: height 0.1s ease-out;
     background: linear-gradient(rgba(88, 123, 236, 0.3),rgba(240, 126, 160, 0.3));
   }
   .catlgdiv:hover:before {
@@ -234,26 +234,77 @@ animation: slide_up 1s ease;
     margin-bottom: 100px;
 }
 
-.jumbotron{
-    color: black;
-   
-    margin-top: 100px;
-}
-
-.jumbo2{
-    border: 1px solid black;
-    border-radius: 0;
-    background-image: linear-gradient(rgba(99, 77, 77, 0.5),rgba(133, 135, 139, 0.5)), url("Images/TV.jpg");
-    background-size: length;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 18.75rem;
-    color: white;
-}
 
 .underline2{
     width: 80px;
     border-bottom: 1px solid white;
     margin: 0 auto;
 
+}
+
+/* .testimonial section */
+.carousel-item,
+.carousel-inner,
+.carousel-inner img {
+  height: 100%;
+  width: 100%;
+}
+.carousel-item{
+    background-image: linear-gradient(rgba(7, 10, 59, 0.4),rgba(7, 10, 59, 0.4)), url("Images/green\ chair.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative; 
+    box-sizing: border-box;
+
+}
+/* useful code here */
+/* .carousel-item {
+    border: 2px solid green;
+  
+}
+.carousel-item:before{
+    content: '';
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    
+    background: linear-gradient(rgba(7, 10, 59, 0.4),rgba(7, 10, 59, 0.4));
+}
+
+.carousel-inner img {
+    object-fit: cover;
+    object-position: center;
+   
+} */
+
+
+.carousel {
+ height: 26rem;
+ margin-bottom: 300px;
+ box-sizing: border-box;
+}
+
+.carousel-indicators li{
+    width: .75rem;
+    height: .75rem;
+    border-radius: 50%;
+}
+.testimonial-text-div{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+    color: white;
+    font-size: 120%;
+}
+.testimonial-title-div{
+    margin-top: 3rem;
+    color: white;
+}
+.author{
+    color: rgb(231, 28, 28);
+    font-weight: bold;
 }
