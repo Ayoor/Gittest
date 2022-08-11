@@ -283,7 +283,7 @@ animation: slide_up 1s ease;
 
 .carousel {
  height: 26rem;
- margin-bottom: 300px;
+ margin-bottom: 50px;
  box-sizing: border-box;
 }
 
@@ -307,4 +307,76 @@ animation: slide_up 1s ease;
 .author{
     color: rgb(231, 28, 28);
     font-weight: bold;
+}
+
+.servicesdiv{
+    margin-top: 40px;
+}
+.cad-title{
+    margin-top: 10px;
+}
+.cad{
+    margin-top: 30px;
+}
+.teamdiv{
+    margin-top: 30px;
+}
+.team1{
+    background-image: url("Images/blackman1.jpg");
+}
+.team2{
+   background-image: url("Images/blackman2.jpg"); 
+}
+.team3{
+   background-image: url("Images/blackman3.jpg "); 
+}
+.team4{
+    background-image: url("Images/blackman4.jpg ");
+}
+/* slide up and overlay effect */
+.card-overlay{
+   width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(85, 85, 252, .3);
+    opacity: 0;
+    transition: opacity .5s;
+}
+.socialsdiv{
+   
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.card-overlay:hover{
+    opacity: 1;
+   
+}
+
+.card-overlay > *{
+    transform: translateY(1.3rem);
+    transition: transform .5s;
+}
+
+.card-overlay:hover > *{
+    transform: translateY(0rem);
+}
+/* end of effect */
+
+.socialicon{
+    color: rgb(46, 45, 45);
+}
+.socialicon:hover{
+    
+    color: white;
+    transition: color .8s;
+    text-decoration: none;
+
+}
+
+.vidjumbo{
+    background-color: grey;
+    min-height: 25rem;
+    border-radius: 0;
 }
