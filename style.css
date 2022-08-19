@@ -374,9 +374,75 @@ animation: slide_up 1s ease;
     text-decoration: none;
 
 }
-
+/* Video section */
 .vidjumbo{
     background-color: grey;
-    min-height: 25rem;
+    height: 25rem;
     border-radius: 0;
+    margin-top: 3.75rem;
+    
+}
+.vidjumbo video{
+    height: 100% ;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 5;
+}
+.orderbutton{
+    border: 1px solid orange;
+    border-radius: 7px;
+    background-color: transparent;
+    color: brown;
+    text-decoration: none;
+    padding: 7px 25px;
+    color: white;
+   
+    
+}
+.orderbutton:hover{
+    border: 1px solid orange;
+    border-radius: 7px;
+    background-color: brown;
+    color: brown;
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+.videocaptionwrapper{
+   z-index: 9;
+   color: white;
+    width: 70%;
+}
+.videocaptionwrapper p{
+    margin-bottom: 30px;
+}
+.vidjumbo::after{
+content: '';
+position: absolute;
+z-index: 7;
+left: 0;
+top: 0;
+width: 100%;
+height: 100%;
+background: rgb(0, 0, 0, 0.6);
+}
+
+
+.play:hover, .pause:hover{
+    cursor: pointer;
+    
+}
+
+.playwrapper{
+    z-index: 20;
+   height: 6.5rem;
+   width: 6.25rem;
+        
+}
+.playspan, .pausespan{
+       display: none;
+     
+    
 }

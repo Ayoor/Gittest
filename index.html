@@ -16,7 +16,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
 
     <title>Welcome to Furniture Z</title>
-    <script src="jquery-3.6.0.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
    
     <!-- font-awesome -->
     <script src="https://kit.fontawesome.com/8ea43b1ea3.js" crossorigin="anonymous"></script>
@@ -411,12 +413,64 @@ Excepteur sint occaecat cupidatat none proident, sunt in culpa qui officia deser
           
 <!-- video section -->
 
-      <div class="jumbotron vidjumbo">
-        <div class="container">
-          <h1 class="display-4">Fluid jumbotron</h1>
-          <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <div class="vidjumbo card">
+        <div class="playwrapper text-center">
+          <span style="color: white;" class="playspan"> <i class="fa-regular fa-circle-play fa-5x play" ></i></span>
+          <span style="color: white;" class="pausespan"> <i class="fa-regular fa-circle-pause fa-5x pause"></i></span> -->
         </div>
+     
+        <video preload="auto" loop id="myVideo">
+           <source type="video/mp4" src="Images/Furniture Promotional Video.mp4">
+           Your Browser doesn't support the video tag
+        </video>
+      <div class="videocaptionwrapper text-center">
+       <p>Aenean commodo ligula eget dolor sociis natoque penatibus et magnis
+        dis parturient montes, <br> nascetur ridiculus consectetur muse.</p>
+       <a href="" class="orderbutton"> Order Now</a>
+
+       
+       
+       
       </div>
+      </div>
+
+      <script>
+      $(".play").click(function(){
+        $('#myVideo').get(0).play()
+        $(".playspan").css("display", "none")
+       $(".pausespan").css("display", "block")
+      });
+
+      $(".pause").click(function(){
+        $('#myVideo').get(0).pause()
+        $(".playspan").css("display", "block")
+        $(".pausespan").css("display", "none")
+      });
+
+       $(".vidjumbo").hover(function(){
+
+        var video = $('video');
+
+var videoElement = video.get(0);
+
+if (videoElement.paused) {
+
+  $(".playspan").css("display", "block")
+  $(".pausespan").css("display", "none")
+        }
+      else{
+        $(".playspan").css("display", "none")
+        $(".pausespan").css("display", "block")
+      }
+      }, function(){
+        $(".playspan").css("display", "none")
+        $(".pausespan").css("display", "none")
+        
+       })
+
+
+      
+      </script>
       
 <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
