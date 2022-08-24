@@ -446,3 +446,61 @@ background: rgb(0, 0, 0, 0.6);
      
     
 }
+.newscardtitle{
+    font-weight: bold;
+}
+.newscarddate{
+    font-size: .8rem;
+}
+
+.readmore:hover{
+    text-decoration: none;
+    color: black;
+    transition: .5s;
+}
+
+.readmore{
+    font-size: .95rem;
+}
+.newssection img{
+    min-height: 100%;
+}
+
+.newsdiv .col-lg-4{
+    margin-top: 30px;
+}
+
+.newscontentdiv{
+    border: 1px solid green;
+}
+
+.newssection .container{
+    margin-top: 150px;
+    
+}
+
+.newssection h6{
+    margin-top: 10px;
+    font-weight: bold;
+}
+.newssection .text-muted{
+    font-size: 80%;
+}
+
+.newssection a{
+    font-size: 90%;
+}
+
+@media  (max-width: 768px) {
+    /* For mobile phones: */
+       
+.newssection .mq{
+
+    margin-top: 300px;
+}
+}
+
+
+.newssection a{
+    margin-right: 5px;
+}
