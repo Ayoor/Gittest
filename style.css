@@ -63,6 +63,7 @@ body{
 }
 .buttondiv{
     margin-top: 40px;
+    
    
 }
 .downloadbutton:hover{
@@ -506,10 +507,23 @@ background: rgb(0, 0, 0, 0.6);
 .testimonial-text-div{
     padding-bottom: 50px;
 }
-
+.buttondiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+     align-items: center;
+}
+.signup{
+    margin-top: 20px;
+    
+   
+    
+}
 
 
 }
+
+
 .container-fluid{
     background-color: #c0bdbd;
 }

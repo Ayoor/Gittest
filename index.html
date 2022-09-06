@@ -556,6 +556,7 @@ Excepteur sint occaecat cupidatat none proident, sunt in culpa qui officia deser
 
 
    <script>
+   
     responsiveweb();
       $(".play").click(function(){
         $('#myVideo').get(0).play()
@@ -619,11 +620,15 @@ function responsiveweb(){
   
   if( $(window).width()< 768){
   
-    $(".container").removeClass("container")
+    $(".container").removeClass("container");
+    $(".container").removeClass("navbar-light");
     $(".containerr").addClass("container-fluid");
+    $(".containerr").addClass("navbar-dark");
     // $(".container-fluid").css("background-color", "green");
   }
 }
+
+
 
     
   </script>
