@@ -55,7 +55,7 @@ body{
     margin-top: 100px;
 }
 .downloadbutton{
-    border: none;
+    border: 0.5px solid #997254;
     border-radius: 7px;
     background-color: #997254;
     color: #997254;
@@ -81,6 +81,7 @@ body{
 .downloadbutton:hover{
     text-decoration: none;
     color: white;
+    background-color: #997254;
     transition: 1s;
     border: 1px solid white;
     
@@ -525,6 +526,8 @@ background: rgb(0, 0, 0, 0.6);
     flex-direction: column;
     justify-content: center;
      align-items: center;
+     box-sizing: border-box;
+
 }
 .signup{
     margin-top: 20px;
