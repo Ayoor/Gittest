@@ -9,7 +9,7 @@ body{
 .mainpage{
     width: 100%;
     min-height: 90vh;
-    background-image: linear-gradient(rgba(109, 54, 54, 0.5),rgba(59, 64, 82, 0.5)), url("Images/home-cover.jpg");
+    background-image: linear-gradient(rgba(224, 170, 170, 0.5),rgba(76, 87, 129, 0.5)), url("Images/mainhomeimg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -21,41 +21,53 @@ body{
    
 }
 
+.navbar-light .navbar-nav .nav-link , .navbar-light .navbar-nav .nav-item{
+    color: white !important;
+    font-weight: 600;
+   
+}
+
 .navbar{
     padding-top: 30px;
         
 }
-.navbar-light .navbar-nav .nav-link , .navbar .navbar-brand{
-    color: brown;
+.navbar-light .navbar-nav .nav-link {
+    color: white;
+    
 }
+
 .navbar .navbar-brand{
     font-size: 200%;
-    color: wheat;
+    color: #997254;
+    font-weight: 600;
+}
+.navbar .navbar-brand:hover{
+    color: #997254;
 
 }
-.navbar-light .navbar-nav .nav-link:hover , .navbar .navbar-brand:hover{
-    color: rgb(218, 160, 160);
+.navbar-nav a.nav-link.active {
+    color: #997254 !important;
 }
 
 .jumbotron{
-    color: wheat;
+    color: white;
     background-color: transparent;
     margin-top: 100px;
 }
 .downloadbutton{
-    border: 1px solid orange;
+    border: none;
     border-radius: 7px;
-    background-color: brown;
-    color: brown;
+    background-color: #997254;
+    color: #997254;
     text-decoration: none;
     padding: 15px 30px;
     color: white;
 }
 .signup{
-    border: 1px solid orange;
+    border: 1px solid white;
     border-radius: 7px;
     background-color: transparent;
-    color: brown;
+    color: #997254;
     text-decoration: none;
     padding: 15px 30px;
     color: white;
@@ -69,17 +81,18 @@ body{
 .downloadbutton:hover{
     text-decoration: none;
     color: white;
-    background-color: rgb(143, 33, 33);
     transition: 1s;
-    border-color: brown;
+    border: 1px solid white;
+    
+    
 }
  .signup:hover{
-    border: 1px solid orange;
+    border: none;
     border-radius: 7px;
-    background-color: brown;
-    color: brown;
-    text-decoration: none;
+    background-color:#E2DFDC;
     color: white;
+    text-decoration: none;
+    color: #997254;
     transition: 1s;
 }
 /* about section */
@@ -95,7 +108,7 @@ body{
 font-size: 110%;
 }
 #textsegment{
-    border: 1px solid brown;
+    border: 1px solid #997254;
     padding-bottom: 30px;
 }
 .aboutbodytext{
@@ -105,7 +118,7 @@ font-size: 110%;
 
 .headerunderline{
     width: 80px;
-    border-bottom: 1px solid brown;
+    border-bottom: 1px solid #997254;
     margin: 0 auto;
 }
 
@@ -203,10 +216,10 @@ animation: slide_up 1s ease;
   }
 
   .contactbtn, #blogbtn, .sendbtn{
-    border: 1px solid orange;
+    border: 1px solid #997254;
     border-radius: 7px;
     background-color: transparent;
-    color: brown;
+    color: #997254;
     text-decoration: none;
     padding: 10px 40px;
     color: black;
@@ -220,10 +233,10 @@ animation: slide_up 1s ease;
     margin-bottom: 30px;
 }
 .contactbtn:hover, #blogbtn:hover{
-    border: 1px solid orange;
+    border: 1px solid #997254;
     border-radius: 7px;
-    background-color: brown;
-    color: brown;
+    background-color: #997254;
+    color: #997254;
     text-decoration: none;
     color: white;
     transition: .6s;
@@ -396,10 +409,10 @@ animation: slide_up 1s ease;
     z-index: 5;
 }
 .orderbutton{
-    border: 1px solid orange;
+    border: 1px solid #997254;
     border-radius: 7px;
     background-color: transparent;
-    color: brown;
+    color: #997254;
     text-decoration: none;
     padding: 7px 25px;
     color: white;
@@ -407,10 +420,10 @@ animation: slide_up 1s ease;
     
 }
 .orderbutton:hover{
-    border: 1px solid orange;
+    border: 1px solid #997254;
     border-radius: 7px;
-    background-color: brown;
-    color: brown;
+    background-color: #997254;
+    color: #997254;
     text-decoration: none;
     color: white;
     transition: 1s;
@@ -623,7 +636,7 @@ padding-top: 20px;
 }
 
 /* sliding down navbar */
-.navbar-scroll{background-color:black;
+.navbar-scroll{background-color:#241C16;
     padding: 10px 20px 0 20px;
     width: 100%;
     position: fixed;
@@ -666,20 +679,15 @@ padding-top: 20px;
     
     
     .navbar-scroll .navbar-nav .nav-link {
-        color: brown;
+        color: white;
     }
     .navbar-scroll .navbar-brand{
         font-size: 200%;
-        color: wheat;
+        color: #997254;
         margin-left: 100px;
     
     }
-    .navbar-scroll .navbar-nav .nav-link:hover , .navbar .navbar-brand:hover{
-        color: rgb(218, 160, 160);
-    }
-    .navbar-scroll .navbar-nav .nav-link:active , .navbar .navbar-brand:active{
-        color: white;
-    }
+   */
     /* end of sliding navbar */
 
     
@@ -689,7 +697,5 @@ padding-top: 20px;
     }
 
    
-   .navbar-nav a.nav-link.active {
-    color: white !important;
-}
+
    
